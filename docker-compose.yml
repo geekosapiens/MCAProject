@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+  php-env:
+    build: .
+    restart: always
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - 9000:80
+
+  db:
+    image: mysql:latest
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 9001:8080

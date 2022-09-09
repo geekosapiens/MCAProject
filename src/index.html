@@ -1,0 +1,82 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/css/bootstrap.min.css">
+       <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css" type="text/css">
+    <noscript><meta http-equiv="refresh" content="0; URL=javascript.php"/></noscript>
+    <script src="./scripts/js/jquery.min.js"></script>
+    <script src="./scripts/js/popper.min.js"></script>
+    <script src="./scripts/js/bootstrap.min.js"></script>
+    <script src="./scripts/js/validator.min.js"></script>
+    <script src="./scripts/js/form.js"></script>
+    <script type="text/javascript">
+        document.addEventListener("contextmenu", function(e){
+            e.preventDefault();
+            }, false);
+        window.addEventListener('keydown',function(e){if(e.keyIdentifier=='U+000A'||e.keyIdentifier=='Enter'||e.keyCode==13){if(e.target.nodeName=='INPUT'&&e.target.type=='text'){e.preventDefault();return false;}}},true);
+    </script>
+    <style type="text/css">
+         .control-label:after {
+              content:"*";
+              color:red;
+        }
+    </style>
+    
+</head>
+<body>
+<style type="text/css">
+input[type=submit] {
+width: 8em;  height: 2em;
+}
+</style>		
+<div class="container py-2">
+        <div class="row">		
+        <div class="col-md-12">	
+            <a href="index.html"> <img src="download.png" class="mx-auto d-block"></a>
+            <h1 class="text-center mt-3 text-primary">Govt. Engineering College, Bikaner</h1>
+            <h6 class="text-center mb-1 mt-3">Online Application Portal</h6>
+                
+            
+                <hr class="mb-3">
+                <div class="col-md-10 offset-md-1">
+                <span class="anchor" id="formComplex"></span>
+                    <div class="form-row mt-2">
+                        
+                        <div class="col-sm-6 pb-3" >
+                              <form method="post" action="login.php">
+                                  <table>
+                                       <tbody><tr><td align="center"><b><u>Already Registered ?</u></b></td></tr>
+                                       <tr><td><span><p align="justify"><br>If you have already created a user account, please log in using your username and password.<br>&nbsp;<br></p></span></td></tr>
+                                       <tr><td align="center"><input type="submit" value="Login"></td></tr>
+                                  </tbody></table>
+                              </form>								
+                        </div>
+                        <div class="col-sm-6 pb-3" style="border-left:outset">
+                              <form method="post" action="register.php">
+                                  <table>
+                                       <tbody><tr><td align="center"><b><u>New User ?</u></b></td></tr>
+                                       <tr><td><p align="justify"><br>A user account is required to fill online Application Form. Once you have created an account, you can sign in at any time to apply.</p></td></tr>
+                                       <tr><td align="center"><input type="submit" value="Register Now"></td></tr>
+                                  </tbody></table>
+                              </form>								
+                        </div>
+                    </div>							
+            </div>				
+    </div>
+</div>
+</div>
+<div class="container py-9">
+        <div class="row">		
+            <div class="col-md-12">
+                <hr class="mb-2">
+                <center>
+                    Site Developed, Maintained and Updated by Anas Baig
+                </center>
+            </div>
+        </div>
+</div>
+
+
+</body></html>
