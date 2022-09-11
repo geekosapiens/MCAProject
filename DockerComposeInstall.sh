@@ -3,4 +3,4 @@ sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-c
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose version
 
-docker-compose docker-compose.yml up
+docker-compose docker-compose.yml build
